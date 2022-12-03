@@ -1,0 +1,49 @@
+public class Student extends Person {
+    private int studentID;
+    private String course;
+    private String teacherName;
+
+    public int getStudentID() {
+        return studentID;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public String getTeacherName() {
+        return teacherName;
+    }
+
+
+    public Student(String lastName, String firstName) {
+        super(lastName, firstName);
+        this.studentID = -1;
+        this.course = "no course";
+        this.teacherName = "no teacher";
+    }
+
+    public Student(String lastName, String firstName, int studentID, String course, String teacherName) {
+        super(lastName, firstName);
+        this.studentID = studentID;
+        this.course = course;
+        this.teacherName = teacherName;
+    }
+    public void displayDetails(){
+        System.out.println(getLastName() +  "," + getFirstName() + "," + getStudentID() + "," + getCourse() + "," + getTeacherName());
+    }
+
+    public void setStudentID(int studentID) {
+        this.studentID = studentID;
+    }
+
+    public void setCourse(String course){
+        this.course = course;
+    }
+
+    public void setTeacherName(String teacherName){
+        this.teacherName = teacherName;
+    }
+
+
+}
