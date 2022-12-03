@@ -1,0 +1,31 @@
+public class Teacher extends Person{
+    private int salary;
+    private String subjectName;
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public String getSubjectName() {
+        return subjectName;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+
+    public void setSubjectName(String subjectName){
+        this.subjectName = subjectName;
+    }
+
+    public Teacher(String lastName, String firstName, int salary, String subjectName){
+        super(lastName, firstName);
+
+        this.salary = salary;
+        this.subjectName = subjectName;
+    }
+    public void displayDetails(){
+        System.out.println(getFirstName() +  "," + getLastName() + "," + getSalary() + "," + getSubjectName());
+    }
+}
